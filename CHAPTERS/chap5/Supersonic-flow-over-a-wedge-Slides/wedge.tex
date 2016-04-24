@@ -1,0 +1,191 @@
+\documentclass[17pt]{beamer} 
+
+% theme shadow
+\usepackage{beamerthemeshadow}
+\usepackage{beamerthemesplit}
+% change the alerted colour to red
+\definecolor{blue}{RGB}{106,90,205}
+%\definecolor{red}{RGB}{0,128,0}
+\setbeamercolor{structure}{fg=blue}
+\setbeamercolor{alerted text}{fg=blue}
+%\setbeamercovered{transparent}
+
+% theme split
+\usepackage{verbatim}
+\newenvironment{colorverbatim}[1][]%
+{%
+\color{blue}
+\verbatim
+}%
+{%
+\endverbatim
+}%
+
+
+%\mode<presentation>{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{TSLogo.png}}} 
+
+% logo
+\logo{\includegraphics[height=1.50 cm]{3t-logo.pdf}}
+%\logo{\includegraphics[height=1.4 cm]{TSLogo.png}
+
+%\hspace{8cm}
+
+%\includegraphics[height=1.50cm]{3t-logo.pdf}}
+
+	
+\begin{document}
+% sf family, bold font
+\sffamily \bfseries
+%\LARGE
+\title
+[Supersonic flow over a wedge
+\hspace{0.44cm}
+\insertframenumber/\inserttotalframenumber]
+{\small Spoken Tutorial\\ \large Supersonic flow over a wedge using OpenFOAM}
+\author
+[Script: Arvind N , Narration: Rahul joshi]
+{{\small Talk to a Teacher \\ \color{blue} http://www.sakshat.ac.in \\ \color {black} National Mission on Education
+  through ICT \\ \color{blue} http://spoken-tutorial.org }\\
+%\vspace {0.9cm}
+\normalsize Rahul Joshi\\ 
+%{\size Narration} \\ \small Rahul\\ 
+{\small Date: June 18, 2012}}
+
+%\date{today}
+
+\begin{frame}
+   \titlepage
+\end{frame}
+
+	 
+% Slide 1
+\begin{frame}[<+-|alert@+>]
+	
+\transdissolve \frametitle{Learning Objectives}
+ 
+\begin{itemize}
+\item{How to solve a compressible flow problem of supersonic flow over a wedge }\pause 
+\item{How to post process the results in paraView} 
+\end{itemize}
+\end{frame}
+
+	% Slide 2
+
+\begin{frame}
+	
+		\transdissolve \frametitle{System Requirement}
+			
+		\begin{itemize}[<+-|alert@+>]
+			\item {Linux Operating System Ubuntu version 10.04} \pause
+			\item {OpenFOAM version 2.1.0}\pause
+\item {ParaView version 3.12.0}
+\end{itemize}
+	\end{frame}
+	
+	%slide 3
+	\begin{frame}
+	
+		\transdissolve \frametitle{Prerequisite}
+			
+		\begin{itemize}[<+-|alert@+>]
+			\item {Compressible flows} \pause
+			\item {Gas dynamics}
+\end{itemize}
+	\end{frame}
+	
+	%Slide 4
+	\begin{frame}[<+-|alert@+>]
+	\transdissolve \frametitle{Geometry}
+	
+	\includegraphics[height=3.8 cm]{slide1.pdf}
+	
+	\end{frame}
+	
+	%Slide 5
+	\begin{frame}[<+-|alert@+>]
+	
+		\transdissolve \frametitle{Compressible solver}
+			
+		\begin{itemize}
+			\item {rhoCentralFoam} \pause
+			\begin{itemize}
+			\item{It is a Density-based compressible flow solver}\pause
+			\item{Based on central- upwind schemes of Kurganov and Tadmor}
+			\end{itemize}
+			\end{itemize}
+	\end{frame}
+	
+	%Slide 6
+	\begin{frame}[<+-|alert@+>]
+	\transdissolve \frametitle{Validation}
+	\begin{itemize}
+	\item{Basic books of aerodynamics by John D Anderson}
+	\end{itemize}
+	\end{frame}
+	
+		
+	% Slide 7
+\begin{frame}[<+-|alert@+>]
+		\transdissolve \frametitle{Summary}
+
+\begin{itemize}
+				
+				\item{Solving a compressible flow problem}\pause
+				\item{Velocity and pressure contour for the wedge}\pause
+				\item{OpenFOAM utility for calculating Mach number}
+			\end{itemize}
+	\end{frame}
+
+
+         % Slide 8
+	\begin{frame}[<+-|alert@+>]
+	
+		\transdissolve \frametitle{Assignment}
+			
+		
+			\begin{itemize}
+	\item{Vary the wedge angle between 10$^\circ$ to 15$^\circ$  to view the shock characteristic for the flow}
+	\end{itemize}
+	\end{frame}
+	
+
+	
+	% Slide 9
+	
+\begin{frame}
+\frametitle{About the Spoken Tutorial Project}
+\begin{itemize}
+\item Watch the video available at {\color{blue} http://spoken-tutorial.org /What\_is\_a\_Spoken\_Tutorial} 
+\item It summarises the Spoken Tutorial project 
+\item If you do not have good bandwidth, you can download \newline and watch it
+\end{itemize}
+\end{frame}
+
+% Slide 10
+
+\begin{frame}
+\frametitle{Spoken Tutorial Workshops}
+The Spoken Tutorial Project Team
+\begin{itemize}
+\item Conducts workshops using spoken tutorials
+\item Gives certificates to those who pass an online test
+\item For more details,please write to {\color{blue}contact@spoken-tutorial.org}
+\end{itemize}
+\end{frame}
+
+% Slide 11
+
+\begin{frame}
+\frametitle{Acknowledgements}
+\begin{itemize}
+\item Spoken Tutorial Project is a part of the Talk to a Teacher
+  project
+\item It is supported by the National Mission on Education through
+  ICT, MHRD, Government of India
+\item More information on this Mission is available at
+{\color{blue} http://spoken-tutorial.org /NMEICT-Intro}
+\end{itemize}
+\end{frame}
+	
+
+\end{document}

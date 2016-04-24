@@ -1,0 +1,44 @@
+\thispagestyle {empty}
+\contentsline {chapter}{\numberline {1}Installing OpenFOAM and Paraview}{1}
+\contentsline {section}{\numberline {1.1}Installation using Synaptic Package Manager}{1}
+\contentsline {section}{\numberline {1.2}Installtion from OpenFOAM website}{2}
+\contentsline {section}{\numberline {1.3}Installation using Source Code}{4}
+\contentsline {section}{\numberline {1.4}Example Problem - Lid Driven Cavity}{5}
+\contentsline {chapter}{\numberline {2}Creating a Simple Geomtery in OpenFoam}{9}
+\contentsline {section}{\numberline {2.1}Geometry creation}{9}
+\contentsline {section}{\numberline {2.2}blockMeshDict}{10}
+\contentsline {chapter}{\numberline {3}Creating a Curved Geomtery in OpenFoam}{17}
+\contentsline {chapter}{\numberline {4}Simulating flow in a Lid Driven Cavity using OpenFOAM}{23}
+\contentsline {chapter}{\numberline {5}Supersonic flow over a wedge using OpenFOAM}{33}
+\contentsline {chapter}{\numberline {6}Downloading and Installing Salome}{41}
+\contentsline {section}{\numberline {6.1}Download Salome}{41}
+\contentsline {section}{\numberline {6.2}Installation}{42}
+\contentsline {chapter}{\numberline {7}Importing Mesh From Third Party Software in OpenFOAM}{47}
+\contentsline {section}{\numberline {7.1}Geometry}{47}
+\contentsline {section}{\numberline {7.2}Meshing}{47}
+\contentsline {section}{\numberline {7.3}Importing the mesh file}{47}
+\contentsline {section}{\numberline {7.4}Boundary Conditions}{49}
+\contentsline {section}{\numberline {7.5}Solver settings}{50}
+\contentsline {section}{\numberline {7.6}Post-Processing}{50}
+\contentsline {section}{\numberline {7.7}Mesh Conversion Commands}{52}
+\contentsline {chapter}{\numberline {8}Installing and Running Gmsh}{53}
+\contentsline {section}{\numberline {8.1}Installing Gmsh}{53}
+\contentsline {section}{\numberline {8.2}Running Gmsh}{54}
+\contentsline {subsection}{\numberline {8.2.1}Create Faces}{55}
+\contentsline {subsection}{\numberline {8.2.2}Creating Volume}{56}
+\contentsline {subsection}{\numberline {8.2.3}Physical Groups}{57}
+\contentsline {chapter}{\numberline {9}Creating a Sphere using Gmsh}{61}
+\contentsline {section}{\numberline {9.1}Points}{61}
+\contentsline {section}{\numberline {9.2}Circular Arc}{62}
+\contentsline {section}{\numberline {9.3}Surface Creation}{62}
+\contentsline {section}{\numberline {9.4}Editing .geo file}{63}
+\contentsline {section}{\numberline {9.5}Boundary Layer}{66}
+\contentsline {section}{\numberline {9.6}Volume Creation}{66}
+\contentsline {section}{\numberline {9.7}Physical Groups}{67}
+\contentsline {chapter}{\numberline {10}Unstructured mesh Generation using Gmsh}{69}
+\contentsline {section}{\numberline {10.1}Geometry}{69}
+\contentsline {section}{\numberline {10.2}Creating Domain}{69}
+\contentsline {section}{\numberline {10.3}Surface and Volume}{70}
+\contentsline {subsection}{\numberline {10.3.1}Physical Groups}{71}
+\contentsline {subsection}{\numberline {10.3.2}Volume}{72}
+\contentsline {section}{\numberline {10.4}Meshing}{74}

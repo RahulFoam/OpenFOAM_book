@@ -1,0 +1,126 @@
+\documentclass[a4paper,11pt]{book}
+\newcommand{\Origin}{/home/rahul/Desktop/cfd_fossee_book/book/cfd-openfoam}
+
+\usepackage{color}
+\usepackage{layouts}
+\usepackage{cclicenses}
+\usepackage{morefloats}
+\usepackage{paralist}
+\usepackage{chngcntr}
+\usepackage{layouts}
+\usepackage{fancyhdr}
+\pagestyle{headings}
+\usepackage{amsmath,graphicx,makeidx}
+\usepackage{fancybox,url}
+\usepackage{cite}
+%\usepackage{appendix}
+\counterwithout{footnote}{chapter}
+\usepackage{subfig}
+\usepackage{listings}
+\usepackage{varioref} % for \vref commands
+%\usepackage{hyperref}
+
+\newcommand{\redcolor}[1]{\color{red}#1\color{black}}
+\newcommand{\codclr}{10pt}
+\newcommand{\scilab}{Scilab}
+\newcommand{\arduino}{Arduino Uno}
+\newcommand{\ie}{\emph{i.e.},}
+
+\newcommand{\ourname}[1]{\\ [1.5mm] \noindent{\bf #1}}
+% Shroff book size
+%\textheight 7.75in
+\textheight 7.5in
+\textwidth 5.5in
+\evensidemargin 0.625in
+\oddsidemargin 0.625in
+
+\newcommand{\Home}{/home/rahul/Desktop/cfd_fossee_book/book/cfd-openfoam}
+
+\newcommand{\tnfig}{0.3\linewidth}
+\newcommand{\smfig}{0.45\linewidth}%0.42
+\newcommand{\smfigp}{0.49\linewidth}%0.42
+\newcommand{\lgfig}{0.65\linewidth}%0.65
+\newcommand{\hgfig}{0.9\linewidth}
+
+\renewcommand\bibname{References}
+
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\figrefp}[1]{Fig.~\vref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\tabrefp}[1]{Table~\vref{#1}}
+\newcommand{\chapref}[1]{Chapter~\ref{#1}}
+\newcommand{\secref}[1]{Sec.~\ref{#1}}
+\newcommand{\sciref}[1]{Scilab~Code~\ref{#1}}
+\newcommand{\ardref}[1]{Arduino~Code~\ref{#1}}
+\newcommand{\mypageref}[1]{Page~\pageref{#1}}
+\newcommand{\fnref}[1]{Footnote~\ref{#1}}
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{1}
+% \bibliographystyle{./IEEEtran}
+\bibliographystyle{unsrt}
+
+\hyphenation{Ashu-tosh pr-ess}
+
+\makeindex
+\begin{document}
+\pagestyle{plain}
+\pagestyle{empty}
+\frontmatter
+\thispagestyle{empty}
+%\input{suppl/dedicate}
+\pagestyle{headings}
+\tableofcontents
+\listoffigures
+\listoftables
+%\listofard
+%\listofcode
+%\thispagestyle{empty}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\input{suppl/preface}
+%\input{suppl/acr}
+
+\mainmatter
+\pagestyle{headings}
+\renewcommand\chaptermark[1]{\markboth{\bf {\thechapter. #1}}{}}
+\renewcommand\sectionmark[1]{\markright{\bf {\thesection. #1}}}
+
+%\input{texfiles/microcontintro.tex}
+%\input{texfiles/sciaurint.tex}
+%\input{suppl/intro.tex}
+\input{CHAPTERS/chap1/chapter1.tex} %rahul  
+\input{CHAPTERS/chap2/chapter2.tex} %suba
+\input{CHAPTERS/chap3/chapter3.tex} %suba
+\input{CHAPTERS/chap4/chapter4.tex} %suba
+\input{CHAPTERS/chap5/chapter5.tex} %suba
+%\input{CHAPTERS/chap6/chapter6.tex}
+%\input{CHAPTERS/chap7/chapter7.tex}
+%\input{CHAPTERS/chap8/chapter8.tex}
+%\input{CHAPTERS/chap9/chapter9.tex}
+\input{CHAPTERS/chap10/chapter10.tex} %rahul
+%\input{CHAPTERS/chap11/chapter11.tex}
+%\input{CHAPTERS/chap12/chapter12.tex}
+%\input{CHAPTERS/chap13/chapter13.tex}
+%\input{CHAPTERS/chap14/chapter14.tex}
+\input{CHAPTERS/chap15/chapter15.tex} %rahul
+\input{CHAPTERS/chap16/chapter16.tex} %rahul
+\input{CHAPTERS/chap17/chapter17.tex} %rahul
+\input{CHAPTERS/chap18/chapter18.tex} %rahul
+%\input{user-code/sw-env/sw-env.tex}
+%\input{user-code/led/led.tex}
+%\input{user-code/push/push.tex}
+%\input{user-code/ldr/ldr.tex}
+%\input{user-code/dcmotor/dcmotor.tex}
+%\input{user-code/pot/pot.tex}
+%\input{user-code/servo/servo.tex}
+%\input{texfiles/servo.tex}
+%\input{texfiles/Appendix.tex}
+%\appendix
+%\input{texfiles/sp-appendix.tex}
+%\input{windows/windows}
+
+%\bibliography{bibliography.bib}
+%\printindex
+%\input{texfiles/AuthorInfo.tex}
+\end{document}
