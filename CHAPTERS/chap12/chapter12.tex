@@ -1,0 +1,40 @@
+\chapter{Exporting geometry from Salome to OpenFOAM}
+\thispagestyle{empty}
+\label{sec:chap12}
+\newcommand{\LocCHtwelvefig}{\Origin/CHAPTERS/chap12/figures}
+
+A 90 deg pipe bend is perhaps the most frequent used fitting in piping systems. The pressure losses in such bends are therefore of considerable engineering importance. This chapter is extension of the the chapter number, where we learnt about creating and meshing a curved pipe in Salome, hence it is manditory that the learner should have already gone through the previous chapter . In this chapter we will learn how to group the mesh faces in Salome, save the mesh file and export the mesh file to be used in OpenFOAM. Here we will also create a case directory to solve this problem and visualize the results in Paraview. \newline
+
+Open the salome working window as shown in the previous chapters. Click on the File in the menu bar and click on Open. Now go to the path where you had saved your geometry in the previous chapter i.e. \textbf{"$*$.hdf"} and open it. \\
+
+Since we have already meshed our geometry will will skip the geometry module and select the Mesh module from module drop down menu. Module $>>$ Mesh. In the object browser we can see the Mesh module, click it to expand the Mesh module tree. Here we will see Mesh_1. The meshed geometry will not be visible in the Salome working window. To view the meshed geometry , right click on Mesh_1 and click on Show. The meshed geometry can be seen as shown in figure, \ref{mesh_1}. Once we open the mesh we will start to group it so that we can export it and use this in OpenFOAM. 
+
+\begin{figure}[h]  
+\centering
+\includegraphics[scale=0.35]{\LocCHelevenfig/mesh_12_1.png}
+\caption{Meshed geometry in Salome working window}
+\label{mesh_1}
+\end{figure}   
+
+\section{Creating Groups}
+
+In Mesh we can create a group of elements of a certain type. This helps us to identify the boundary patches in OpenFOAM. To create group from the top menu bar click on "Mesh" and slect "Create Group" To create a group once needs to define the following, \newline
+\begin{itemize}
+\item Mesh - The mesh from which elements will be selected to form the group. We can select the mesh in the Object Inspector Menu or in the 3D viewer.
+\item Element type - These are a set of radio buttons which allows us to select the type of element which will form the group.
+\begin{itemize}
+\item Nodes
+\item 0D elements
+\item Ball
+\item Edges
+\item Faces
+\item Volumes
+\end{itemize}
+\item Name - this field allows you to enter the name of the new group eg, "inlet"
+\item Color - assigns color to a certain group. This helps to display the elements of a group
+\item We can also distinguish between three group type as Standalone geometry, Group on geometry and group on filter.
+\end{itemize}
+ 
+
+\section{Grouping Mesh}
+
