@@ -36,21 +36,10 @@ In Mesh we can create a group of elements of a certain type. This helps us to id
 \end{itemize}
 
 \section{Grouping Mesh}
-Since we have three patches in our geometry we will select the "Face" option from create groups and Group on geometry as the group type, this is because we will be grouping the elements of a certain type generated on our geometry. The Group on Geometry can be created only if the mesh is based on geometry. To define a group we choose the Group on geometry check box and then click the selection button besides Gemetrical object as shown in the figure \ref{mesh_1}. 
-
-\begin{figure}[h]  
-\centering
-\includegraphics[scale=0.35]{\LocCHelevenfig/mesh_12_1.png}
-\caption{Meshed geometry in Salome working window}
-\label{mesh_1}
-\end{figure} 
-
-Here we get two options
+Since we have three patches in our geometry we will select the "Face" option from create groups and Group on geometry as the group type, this is because we will be grouping the elements of a certain type generated on our geometry. The Group on Geometry can be created only if the mesh is based on geometry. To define a group we choose the Group on geometry check box and then click the selection button besides Gemetrical object. Here we get two options
 \begin{itemize}
 \item Direct geometry selection - to select a shape in the Object Browser 
 \item Find geometry by mesh element selection - to activate a dialog which retrives a shape by the selected element generated on this shape.
 \end{itemize} //
 
-We will use direct geometry selection since we have already grouped our geometry while creating the geometry. Open the geometry tree in the object browser and click on the Pipe$\_$1 and select the group which we had created during geometry such as "inlet", "outlet" and "walls". These faces can be identified by color by selecting a color from Color group . We can give names to this group of our choice , in this chapter we have kept the same name as that given in geometry i.e. "Inlet".Finally click on Apply and close to end the geometry selection. Follow the similar procedure for naming outlet faces of the mesh. Inlet and Outlet group will be seen in the Mesh-1 tree. For selecting the faces for walls we select the element type in Create group as Face and Group type as Group on Filter. Now we click on the set filter.This open a new box named as Filter for faces \ref{mesh_1}, click on the "Add" button. In the drop down menu below Criterion select "Free faces" and click on Apply and close. You can provide any color of your choice here. Click on Apply and close to create Group-1. From the menu bar now click on Mesh menu and select Cut of groups and select the main object as Group-1 as shown in figure \ref{mesh_1}. Click on tool object and from grouped object select Inlet, hold the shift key and select Outlet. We can see the Result name on top of the window, type "walls". Select any color of your choice and click on Apply and close. This will now create a group named "walls" in the Mesh tress in object browser. Delete the Group-1 in the mesh tree as we no longer need the group. We can save our work by clicking on the Save Document option just above object browser. To export the mesh file right click on Mesh-1 and select Export and click on UNV file. Name this file as "bentpipe" and save it in your working directory. Now we can close salome.
-
-\section{} 
+We will use direct geometry selection since we have already grouped our geometry while creating the geometry.Now we will open the geometry treee
